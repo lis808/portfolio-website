@@ -22,6 +22,18 @@ body {
   a:focus { outline: none; }
 }
 
+/* Keep poster-image captions readable when Squarespace's dynamic text
+   measurement scales them against a wide image block. */
+.sqs-block-image .image-card .image-title.sqs-dynamic-text {
+  font-size: 24px !important;
+  line-height: 1.25 !important;
+}
+
+.sqs-block-image .image-card .image-subtitle.sqs-dynamic-text {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+
 nav {
   a {  }
   a:link,
@@ -1054,4 +1066,3 @@ html.touch {
 @media only screen and (max-width: 640px) {
   @import 'sqs-grid-breaker';
 }
-
